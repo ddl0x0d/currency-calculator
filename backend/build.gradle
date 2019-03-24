@@ -1,0 +1,62 @@
+plugins {
+    id "com.github.ben-manes.versions" version "0.33.0" // 13 Sep 2020
+    id 'com.google.cloud.tools.jib' version '1.0.2' // 13 Mar 2019
+    id 'com.gorylenko.gradle-git-properties' version '2.0.0' // 15 Jan 2019
+    id 'org.springframework.boot' version '2.1.3.RELEASE' // 15 Feb 2019
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.acme.calculator'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    mapstructVersion = '1.3.0.Final' // 10 Feb 2019
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok'
+
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    implementation "org.mapstruct:mapstruct-jdk8:${mapstructVersion}"
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    testImplementation 'org.json:json:20180813' // 14 Aug 2018
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'com.vaadin.external.google', module: 'android-json'
+    }
+    testImplementation 'org.testcontainers:testcontainers:1.10.7' // 14 Mar 2019
+}
+
+tasks.named("dependencyUpdates").configure {
+    revision = "release"
+    gradleReleaseChannel = "current"
+    outputDir = "build/reports/dependencyUpdates"
+}
+
+springBoot {
+    buildInfo()
+}
+
+jib {
+    to {
+        image = "${group}/${name}"
+    }
+    container {
+        ports = ['8080']
+    }
+}
+
+tasks.build.dependsOn tasks.jibDockerBuild

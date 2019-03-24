@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Errors /> renders correctly with errors 1`] = `
+<Errors
+  messages={
+    Array [
+      Object {
+        "field": "Field",
+        "message": "has error",
+      },
+      Object {
+        "message": "There is an error",
+      },
+    ]
+  }
+>
+  <Bootstrap(Row)
+    className="justify-content-center"
+  >
+    <Row
+      as="div"
+      bsPrefix="row"
+      className="justify-content-center"
+      noGutters={false}
+    >
+      <div
+        className="justify-content-center row"
+      >
+        <Col
+          as="div"
+          md={8}
+          xl={4}
+        >
+          <div
+            className="col-xl-4 col-md-8"
+          >
+            <Alert
+              className="small"
+              closeLabel="Close alert"
+              dismissible={true}
+              onClose={[Function]}
+              show={true}
+              transition={[Function]}
+              variant="danger"
+            >
+              <Fade
+                appear={false}
+                in={true}
+                mountOnEnter={false}
+                timeout={300}
+                unmountOnExit={true}
+              >
+                <Transition
+                  addEndListener={[Function]}
+                  appear={false}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={300}
+                  unmountOnExit={true}
+                >
+                  <div
+                    className="fade small alert alert-danger alert-dismissible show"
+                    role="alert"
+                  >
+                    <CloseButton
+                      label="Close alert"
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="close"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <span
+                          aria-hidden="true"
+                        >
+                          ×
+                        </span>
+                        <span
+                          className="sr-only"
+                        >
+                          Close alert
+                        </span>
+                      </button>
+                    </CloseButton>
+                    <div
+                      key="0"
+                    >
+                      Field
+                       
+                      has error
+                    </div>
+                    <div
+                      key="1"
+                    >
+                       
+                      There is an error
+                    </div>
+                  </div>
+                </Transition>
+              </Fade>
+            </Alert>
+          </div>
+        </Col>
+      </div>
+    </Row>
+  </Bootstrap(Row)>
+</Errors>
+`;
+
+exports[`<Errors /> renders correctly without errors 1`] = `
+<Errors
+  messages={Array []}
+>
+  <Bootstrap(Row)
+    className="justify-content-center"
+  >
+    <Row
+      as="div"
+      bsPrefix="row"
+      className="justify-content-center"
+      noGutters={false}
+    >
+      <div
+        className="justify-content-center row"
+      >
+        <Col
+          as="div"
+          md={8}
+          xl={4}
+        >
+          <div
+            className="col-xl-4 col-md-8"
+          >
+            <Alert
+              className="small"
+              closeLabel="Close alert"
+              dismissible={true}
+              onClose={[Function]}
+              show={false}
+              transition={[Function]}
+              variant="danger"
+            >
+              <Fade
+                appear={false}
+                in={false}
+                mountOnEnter={false}
+                timeout={300}
+                unmountOnExit={true}
+              >
+                <Transition
+                  addEndListener={[Function]}
+                  appear={false}
+                  enter={true}
+                  exit={true}
+                  in={false}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={300}
+                  unmountOnExit={true}
+                />
+              </Fade>
+            </Alert>
+          </div>
+        </Col>
+      </div>
+    </Row>
+  </Bootstrap(Row)>
+</Errors>
+`;

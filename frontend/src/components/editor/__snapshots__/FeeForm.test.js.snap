@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeeForm /> renders correctly 1`] = `
+<FeeForm
+  addFee={[MockFunction addFee]}
+>
+  <Bootstrap(Row)
+    className="justify-content-center"
+  >
+    <Row
+      as="div"
+      bsPrefix="row"
+      className="justify-content-center"
+      noGutters={false}
+    >
+      <div
+        className="justify-content-center row"
+      >
+        <Col
+          as="div"
+          md={2}
+          xl={1}
+          xs={3}
+        >
+          <div
+            className="col-xl-1 col-md-2 col-3"
+          >
+            <CurrencySelector
+              handleChange={[Function]}
+              id="from"
+              label="From"
+              value=""
+            >
+              <FormGroup
+                as="div"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    className="small mb-0"
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="small mb-0 form-label"
+                    >
+                      From
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    as="select"
+                    id="from"
+                    onChange={[Function]}
+                    size="sm"
+                    value=""
+                  >
+                    <select
+                      className="form-control form-control-sm"
+                      id="from"
+                      onChange={[Function]}
+                      value=""
+                    >
+                      <option
+                        key=""
+                        value=""
+                      />
+                    </select>
+                  </FormControl>
+                </div>
+              </FormGroup>
+            </CurrencySelector>
+          </div>
+        </Col>
+        <Col
+          as="div"
+          md={2}
+          xl={1}
+          xs={3}
+        >
+          <div
+            className="col-xl-1 col-md-2 col-3"
+          >
+            <CurrencySelector
+              handleChange={[Function]}
+              id="to"
+              label="To"
+              value=""
+            >
+              <FormGroup
+                as="div"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    className="small mb-0"
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="small mb-0 form-label"
+                    >
+                      To
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    as="select"
+                    id="to"
+                    onChange={[Function]}
+                    size="sm"
+                    value=""
+                  >
+                    <select
+                      className="form-control form-control-sm"
+                      id="to"
+                      onChange={[Function]}
+                      value=""
+                    >
+                      <option
+                        key=""
+                        value=""
+                      />
+                    </select>
+                  </FormControl>
+                </div>
+              </FormGroup>
+            </CurrencySelector>
+          </div>
+        </Col>
+        <Col
+          as="div"
+          md={2}
+          xl={1}
+          xs={3}
+        >
+          <div
+            className="col-xl-1 col-md-2 col-3"
+          >
+            <AmountInput
+              handleChange={[Function]}
+              id="amount"
+              label="Fee"
+              step={0.01}
+              value={0}
+            >
+              <FormGroup
+                as="div"
+              >
+                <div
+                  className="form-group"
+                >
+                  <FormLabel
+                    className="small mb-0"
+                    column={false}
+                    srOnly={false}
+                  >
+                    <label
+                      className="small mb-0 form-label"
+                    >
+                      Fee
+                    </label>
+                  </FormLabel>
+                  <FormControl
+                    as="input"
+                    id="amount"
+                    min={0}
+                    onChange={[Function]}
+                    size="sm"
+                    step={0.01}
+                    type="number"
+                    value={0}
+                  >
+                    <input
+                      className="form-control form-control-sm"
+                      id="amount"
+                      min={0}
+                      onChange={[Function]}
+                      step={0.01}
+                      type="number"
+                      value={0}
+                    />
+                  </FormControl>
+                </div>
+              </FormGroup>
+            </AmountInput>
+          </div>
+        </Col>
+        <Col
+          as="div"
+          md={2}
+          xl={1}
+          xs={3}
+        >
+          <div
+            className="col-xl-1 col-md-2 col-3"
+          >
+            <FormLabel
+              className="mb-0"
+              column={false}
+              srOnly={false}
+            >
+              <label
+                className="mb-0 form-label"
+              >
+                 
+              </label>
+            </FormLabel>
+            <FormGroup
+              as="div"
+            >
+              <div
+                className="form-group"
+              >
+                <Button
+                  active={false}
+                  block="true"
+                  disabled={true}
+                  id="add"
+                  onClick={[Function]}
+                  size="sm"
+                  type="button"
+                  variant="primary"
+                >
+                  <button
+                    className="btn btn-primary btn-block btn-sm"
+                    disabled={true}
+                    id="add"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Add
+                  </button>
+                </Button>
+              </div>
+            </FormGroup>
+          </div>
+        </Col>
+      </div>
+    </Row>
+  </Bootstrap(Row)>
+</FeeForm>
+`;

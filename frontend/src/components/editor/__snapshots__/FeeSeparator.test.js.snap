@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeeSeparator /> renders correctly 1`] = `
+<FeeSeparator>
+  <Bootstrap(Row)
+    className="justify-content-center"
+  >
+    <Row
+      as="div"
+      bsPrefix="row"
+      className="justify-content-center"
+      noGutters={false}
+    >
+      <div
+        className="justify-content-center row"
+      >
+        <Col
+          as="div"
+          md={8}
+          xl={4}
+        >
+          <div
+            className="col-xl-4 col-md-8"
+          >
+            <hr
+              style={
+                Object {
+                  "borderTop": "3px solid rgba(0, 0, 0, 0.5)",
+                }
+              }
+            />
+          </div>
+        </Col>
+      </div>
+    </Row>
+  </Bootstrap(Row)>
+</FeeSeparator>
+`;

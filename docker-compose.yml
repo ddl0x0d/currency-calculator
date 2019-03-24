@@ -1,0 +1,21 @@
+version: "3"
+services:
+
+  frontend:
+    image: com.acme.calculator/frontend
+    ports:
+      - "8000:80"
+
+  backend:
+    image: com.acme.calculator/backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=fixer,redis
+      - SPRING_REDIS_HOST=redis
+      - FIXER_API_KEY=${FIXER_API_KEY}
+
+  redis:
+    image: redis:5-alpine
+    ports:
+      - "6379:6379"

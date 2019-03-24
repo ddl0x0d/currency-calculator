@@ -1,0 +1,7 @@
+app:
+  fixer:
+    api-key: ${FIXER_API_KEY}
+    endpoints:
+      base-url: http://data.fixer.io/api
+      symbols: ${app.fixer.endpoints.base-url}/symbols
+      latest-rates: ${app.fixer.endpoints.base-url}/latest

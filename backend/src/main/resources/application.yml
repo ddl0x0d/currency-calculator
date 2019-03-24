@@ -1,0 +1,29 @@
+app:
+  fee:
+    default-amount: 0.01
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  health:
+    redis:
+      enabled: false
+  server:
+    port: 8888
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  cache:
+    cache-names: currencies,rates
+    type: simple
+  data:
+    redis:
+      repositories:
+        enabled: false
+  messages:
+    basename: ValidationMessages

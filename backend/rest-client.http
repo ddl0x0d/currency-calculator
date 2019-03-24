@@ -1,0 +1,77 @@
+# https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html
+
+################################ Fees ################################
+
+### List fees
+
+GET {{host}}:{{port}}/api/fees
+Accept: application/json
+
+### Add fee
+
+POST {{host}}:{{port}}/api/fees
+Accept: application/json
+Content-Type: application/json
+
+{
+  "from": "EUR",
+  "to": "GBP",
+  "fee": 0.05
+}
+
+> {%
+    var id = response.body.data.id;
+    client.global.set("fee-id", id);
+%}
+
+### Remove fee
+
+DELETE {{host}}:{{port}}/api/fees/{{fee-id}}
+
+################################ Currency ################################
+
+### List currencies
+
+GET {{host}}:{{port}}/api/currencies
+Accept: application/json
+
+### Convert currency
+
+POST {{host}}:{{port}}/api/currencies/convert
+Accept: application/json
+Content-Type: application/json
+
+{
+  "amount": 100,
+  "from": "EUR",
+  "to": "GBP"
+}
+
+################################ Actuator ################################
+
+### Info
+
+GET {{host}}:{{management-port}}/actuator/info
+Accept: application/vnd.spring-boot.actuator.v2+json
+
+### Health
+
+GET {{host}}:{{management-port}}/actuator/health
+Accept: application/vnd.spring-boot.actuator.v2+json
+
+################################ Fixer ################################
+
+# https://fixer.io/documentation
+
+### Supported Symbols Endpoint
+
+GET {{fixer-host}}/api/symbols?access_key={{fixer-api-key}}
+
+### Latest Rates Endpoint
+
+GET {{fixer-host}}/api/latest
+    ?access_key={{fixer-api-key}}
+    &base=EUR
+    &symbols=GBP
+
+###
