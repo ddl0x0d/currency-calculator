@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AmountInput /> renders correctly 1`] = `
+<AmountInput
+  handleChange={[MockFunction handleChange]}
+  id="amount"
+  label="Amount"
+  step={1}
+  value={0}
+>
+  <FormGroup
+    as="div"
+  >
+    <div
+      className="form-group"
+    >
+      <FormLabel
+        className="small mb-0"
+        column={false}
+        srOnly={false}
+      >
+        <label
+          className="small mb-0 form-label"
+        >
+          Amount
+        </label>
+      </FormLabel>
+      <FormControl
+        as="input"
+        id="amount"
+        min={0}
+        onChange={[Function]}
+        size="sm"
+        step={1}
+        type="number"
+        value={0}
+      >
+        <input
+          className="form-control form-control-sm"
+          id="amount"
+          min={0}
+          onChange={[Function]}
+          step={1}
+          type="number"
+          value={0}
+        />
+      </FormControl>
+    </div>
+  </FormGroup>
+</AmountInput>
+`;

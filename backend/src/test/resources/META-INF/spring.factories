@@ -1,0 +1,2 @@
+org.springframework.test.context.TestExecutionListener=\
+  com.github.ddl0x0d.calculator.test.containers.TestContainersExecutionListener

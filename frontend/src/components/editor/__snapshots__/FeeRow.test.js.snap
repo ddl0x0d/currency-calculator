@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FeeRow /> renders correctly 1`] = `
+<Bootstrap(Row)
+  className="justify-content-center align-items-baseline"
+>
+  <Col
+    as="div"
+    className="text-center"
+    md={2}
+    xl={1}
+    xs={3}
+  >
+    EUR
+  </Col>
+  <Col
+    as="div"
+    className="text-center"
+    md={2}
+    xl={1}
+    xs={3}
+  >
+    GBP
+  </Col>
+  <Col
+    as="div"
+    className="text-center"
+    md={2}
+    xl={1}
+    xs={3}
+  >
+    0.00
+  </Col>
+  <Col
+    as="div"
+    md={2}
+    xl={1}
+    xs={3}
+  >
+    <Button
+      active={false}
+      block="true"
+      className="mb-3"
+      disabled={false}
+      onClick={[Function]}
+      size="sm"
+      type="button"
+      variant="danger"
+    >
+      Remove
+    </Button>
+  </Col>
+</Bootstrap(Row)>
+`;

@@ -1,0 +1,21 @@
+version: "3"
+services:
+
+  frontend:
+    image: com.github.ddl0x0d.calculator/frontend
+    ports:
+      - "8000:80"
+
+  backend:
+    image: com.github.ddl0x0d.calculator/backend:jib
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=fixer,redis
+      - SPRING_REDIS_HOST=redis
+      - FIXER_API_KEY=${FIXER_API_KEY}
+
+  redis:
+    image: redis:6.0-alpine
+    ports:
+      - "6379:6379"

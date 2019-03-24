@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CurrencySelector /> renders correctly with currencies 1`] = `
+<CurrencySelector
+  handleChange={[MockFunction handleChange]}
+  id="currency"
+  label="Currency"
+  value="EUR"
+>
+  <FormGroup
+    as="div"
+  >
+    <div
+      className="form-group"
+    >
+      <FormLabel
+        className="small mb-0"
+        column={false}
+        srOnly={false}
+      >
+        <label
+          className="small mb-0 form-label"
+        >
+          Currency
+        </label>
+      </FormLabel>
+      <FormControl
+        as="select"
+        id="currency"
+        onChange={[Function]}
+        size="sm"
+        value="EUR"
+      >
+        <select
+          className="form-control form-control-sm"
+          id="currency"
+          onChange={[Function]}
+          value="EUR"
+        >
+          <option
+            key=""
+            value=""
+          />
+          <option
+            key="EUR"
+            value="EUR"
+          >
+            EUR
+          </option>
+          <option
+            key="GBP"
+            value="GBP"
+          >
+            GBP
+          </option>
+        </select>
+      </FormControl>
+    </div>
+  </FormGroup>
+</CurrencySelector>
+`;
+
+exports[`<CurrencySelector /> renders correctly without currencies 1`] = `
+<CurrencySelector
+  handleChange={[MockFunction handleChange]}
+  id="currency"
+  label="Currency"
+  value=""
+>
+  <FormGroup
+    as="div"
+  >
+    <div
+      className="form-group"
+    >
+      <FormLabel
+        className="small mb-0"
+        column={false}
+        srOnly={false}
+      >
+        <label
+          className="small mb-0 form-label"
+        >
+          Currency
+        </label>
+      </FormLabel>
+      <FormControl
+        as="select"
+        id="currency"
+        onChange={[Function]}
+        size="sm"
+        value=""
+      >
+        <select
+          className="form-control form-control-sm"
+          id="currency"
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            key=""
+            value=""
+          />
+        </select>
+      </FormControl>
+    </div>
+  </FormGroup>
+</CurrencySelector>
+`;

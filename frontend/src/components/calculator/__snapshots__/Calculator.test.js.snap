@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Calculator /> renders correctly 1`] = `
+<Fragment>
+  <Bootstrap(Row)
+    className="justify-content-center"
+  >
+    <Col
+      as="div"
+      md={2}
+      xl={1}
+      xs={3}
+    >
+      <AmountInput
+        handleChange={[Function]}
+        id="amount"
+        label="Amount"
+        step={1}
+        value={0}
+      />
+    </Col>
+    <Col
+      as="div"
+      md={2}
+      xl={1}
+      xs={3}
+    >
+      <CurrencySelector
+        handleChange={[Function]}
+        id="from"
+        label="From"
+        value=""
+      />
+    </Col>
+    <Col
+      as="div"
+      md={2}
+      xl={1}
+      xs={3}
+    >
+      <CurrencySelector
+        handleChange={[Function]}
+        id="to"
+        label="To"
+        value=""
+      />
+    </Col>
+  </Bootstrap(Row)>
+  <Bootstrap(Row)
+    className="mt-3"
+  >
+    <Col
+      as="div"
+    >
+      <h3
+        className="text-center font-weight-bolder"
+        id="conversion"
+      />
+    </Col>
+  </Bootstrap(Row)>
+</Fragment>
+`;
